@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+/* Reset margins, padding, and borders for all elements */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+
+*:focus {
+  outline: 0;
+}
+
+/* Set default font size and line height for better readability */
+html {
+  font-size: 16px;
+  line-height: 1.5;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+/* Set up body defaults */
+body {
+  font-family: "Alata", sans-serif;
+  background-color: #fff; /* Default background color */
+  width: 100%;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove list styles on all lists */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Ensure anchor tags have no default underline and inherit color */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Ensure images and videos are responsive */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Set default input and button styles */
+button,
+input,
+select,
+textarea {
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  font-family: "Alata", sans-serif;
+}
+
+/* Remove default button appearance */
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Add default focus outline for accessibility */
+a:focus,
+button:focus,
+input:focus {
+  outline: none;
+}
+
+/* Base styles for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Alata", sans-serif;
+  margin: 0;
+  font-weight: bold;
+}

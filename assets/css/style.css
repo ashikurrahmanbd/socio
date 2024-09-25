@@ -1,0 +1,145 @@
+:root {
+  --color-dark: #130f40;
+  --color-light: #ecf0f1;
+  --color-white: #fff;
+  --color-black: #000;
+  --primary-color: #8e44ad;
+  --secondary-colorr: #2980b9;
+  --third-color: #27ae60;
+  --fourth-color: #16a085;
+
+  --text-muted: #bdc3c7;
+
+  --border-radius: 2rem;
+  --card-border-radius: 1rem;
+  --btn-padding: 0.6rem 2rem;
+  --search-padding: 0.6rem 1rem;
+  --card-padding: 1rem;
+  --card-radius: 1rem;
+}
+
+body {
+  color: var(--color-dark);
+  background: var(--color-light);
+  overflow-x: hidden;
+}
+
+/* Container */
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.profile-photo {
+  width: 2.7rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* Nav  CSS */
+nav {
+  background: var(--color-white);
+  padding: var(--search-padding);
+  box-shadow: 0 0 8px 1px var(--color-dark);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10s;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-bar,
+.search-bar input {
+  background-color: var(--color-light);
+  padding: var(--search-padding);
+  border-radius: var(--border-radius);
+}
+.search-bar input {
+  width: 30vw;
+}
+.create {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.btn {
+  background: var(--primary-color);
+  padding: 8px 32px 10px 30px;
+  color: var(--color-white);
+  border-radius: var(--border-radius);
+}
+
+/* main */
+main {
+  position: relative;
+  top: 6rem;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* leftsidebar */
+.left-sidebar {
+  flex-basis: 20%;
+}
+
+.left-sidebar .profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--color-white);
+  padding: var(--card-padding);
+  border-radius: var(--card-radius);
+}
+.left-sidebar .profile .profile-info {
+  line-height: 1.2em;
+}
+
+.left-sidebar .profile .profile-info p {
+  color: var(--text-muted);
+}
+.app-navigation {
+  background: var(--color-white);
+  border-radius: var(--card-border-radius);
+  margin-top: 20px;
+}
+.app-navigation .link {
+  padding: var(--card-padding);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 4px solid transparent;
+}
+
+.app-navigation .link:hover {
+  transition: 0.3s ease-in;
+  background-color: var(--color-light);
+  border-left: 4px solid var(--primary-color);
+}
+.app-navigation .link i {
+  font-size: 26px;
+  padding: 10px 25px;
+}
+.middle-content {
+  flex-basis: 55%;
+}
+
+.right-sidebar {
+  flex-basis: 25%;
+}

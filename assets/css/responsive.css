@@ -1,0 +1,37 @@
+@media (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    width: 96%;
+  }
+  .right-sidebar {
+    display: none;
+  }
+  .left-sidebar {
+    flex-basis: 25%;
+  }
+  .middle-content {
+    flex-basis: 75%;
+  }
+}
+
+/* tab devices */
+@media (max-width: 767px) {
+  .container {
+    width: 96%;
+  }
+  .main-content {
+    display: grid;
+  }
+  .app-navigation {
+    display: flex;
+  }
+  .app-navigation .link {
+    width: max-content;
+  }
+  .app-navigation .link span {
+    display: none;
+  }
+
+  .right-sidebar {
+    display: none;
+  }
+}

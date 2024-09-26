@@ -23,15 +23,34 @@
   }
   .app-navigation {
     display: flex;
+    justify-content: space-around;
   }
   .app-navigation .link {
     width: max-content;
+  }
+  .app-navigation .link i {
+    font-size: 25px;
   }
   .app-navigation .link span {
     display: none;
   }
 
   .right-sidebar {
+    display: none;
+  }
+}
+
+/* mobile */
+@media (max-width: 580px) {
+  .search-bar {
+    display: none;
+  }
+
+  .app-navigation .link i {
+    font-size: 18px;
+    padding: 10px 12px;
+  }
+  .story-board .story:nth-child(6) {
     display: none;
   }
 }
